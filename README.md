@@ -1,2 +1,0 @@
-# Mukuladavidbio
-My biography 
