@@ -454,7 +454,7 @@
         <div class="eyebrow">Kampala, Uganda &mdash; est. 2005</div>
         <h1>Mukula David<br><span>/ Muks Generation</span></h1>
         <div class="role">Software Developer <b>&middot;</b> Flutter &amp; Systems Engineering <b>&middot;</b> Electrical Engineering Student</div>
-        <p class="hero-lede">A developer who thinks in circuits before he thinks in code &mdash; building mobile apps, institutional software, and brand systems for businesses across Uganda, grounded [...]
+        <p class="hero-lede">A developer who thinks in circuits before he thinks in code &mdash; building mobile apps, institutional software, and brand systems for businesses across Uganda, grounded in the craft of solving real problems.</p>
       </div>
       <div class="hero-photo">
         <div class="frame">
@@ -466,6 +466,133 @@
     </div>
   </div>
 </header>
+
+<!-- ============ ABOUT / WORK ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">/ 01</div>
+      <h2>Work & Projects</h2>
+    </div>
+    <div class="circuit-timeline">
+      <div class="trace-line"></div>
+      <div class="node">
+        <div class="year">2023 — Present</div>
+        <h3>Senior Mobile Engineer</h3>
+        <p>Leading Flutter development and architecting scalable mobile solutions for fintech applications across East Africa.</p>
+      </div>
+      <div class="node">
+        <div class="year">2022 — 2023</div>
+        <h3>Full-Stack Developer</h3>
+        <p>Built institutional management systems and custom software solutions for government and enterprise clients.</p>
+      </div>
+      <div class="node">
+        <div class="year">2020 — 2022</div>
+        <h3>Junior Developer</h3>
+        <p>Started journey in software development, focusing on mobile app development and learning systems architecture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOCUS AREAS ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">/ 02</div>
+      <h2>Focus Areas</h2>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-card">
+        <div class="tag">Mobile</div>
+        <h3>Flutter & Native</h3>
+        <p>Building beautiful, high-performance mobile applications for iOS and Android with clean architecture principles.</p>
+      </div>
+      <div class="focus-card">
+        <div class="tag">Systems</div>
+        <h3>Backend Architecture</h3>
+        <p>Designing scalable systems and APIs that power large-scale applications with emphasis on performance and reliability.</p>
+      </div>
+      <div class="focus-card">
+        <div class="tag">Design</div>
+        <h3>Brand Systems</h3>
+        <p>Creating comprehensive design systems and brand guidelines that scale across digital products.</p>
+      </div>
+      <div class="focus-card">
+        <div class="tag">Engineering</div>
+        <h3>Systems Thinking</h3>
+        <p>Approaching problems from electrical and mechanical engineering perspectives to create resilient solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERSONAL ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">/ 03</div>
+      <h2>Personal</h2>
+    </div>
+    <div class="family-grid">
+      <div class="family-card">
+        <div class="rel">Father</div>
+        <h3>David</h3>
+        <div class="meta">Business Owner, Entrepreneur</div>
+        <p>Built his way up from trade to successful business, teaching me the value of persistence and hard work.</p>
+      </div>
+      <div class="family-card">
+        <div class="rel">Mother</div>
+        <h3>Grace</h3>
+        <div class="meta">Healthcare Professional</div>
+        <p>Dedicated to serving others through healthcare, instilling in me the importance of purpose-driven work.</p>
+      </div>
+    </div>
+    <div class="origin-note">
+      <p>Born and raised in Kampala, Uganda. I draw inspiration from my community and the diverse problems we face. Every project is an opportunity to solve real challenges and create impact.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="eyebrow">Get In Touch</div>
+    <h2>Let's create something meaningful together.</h2>
+    <p>Whether you have a project idea, want to collaborate, or just want to chat about technology and design.</p>
+    <div class="contact-line">
+      <a href="mailto:mukula@example.com">Email</a>
+      <a href="https://github.com/MuksGeneration">GitHub</a>
+      <a href="https://twitter.com/MuksGeneration">Twitter</a>
+      <a href="https://linkedin.com/in/mukuladavid">LinkedIn</a>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2025 Mukula David. All rights reserved.</div>
+      <div>Crafted with intention in Kampala, Uganda.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Intersection Observer for reveal animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.node, .focus-card, .family-card').forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+  });
+</script>
 
 </body>
 </html>
